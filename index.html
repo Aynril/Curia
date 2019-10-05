@@ -6,16 +6,16 @@
 </head>
 <body>
 
-<h1 style="color:rgb(6, 27, 143);">Hilf uns bei dieser Definition</h1>
-<p>Begriff:</p>
-<p id="Fachbegriff"></p>
+<h1 style="color:rgb(6, 27, 143);">Hilf uns bei einer Definition</h1>
 <div>
 <form action="form.php" method="post"> 
-      
+        <label for="binput" id ="begriff">Begriff:</label>
+
+      <input id="binput" type="text" name="begriff"></br>
        <label for="text">Deine Definition:</label>
        <textarea id="text" name="text" cols="35" rows="4"></textarea> 
 
-    <label>Kategorie:
+    <label></br>Kategorie:
         <select name="top5">
             <option>allgemeines</option>
             <option>Länder</option>	
@@ -26,8 +26,8 @@
             <option>Ziviles</option>	
         </select>
     </label>
+    <input type="submit" value="Absenden">
  </form>
- <button onclick="myFunction()">Absenden</button>
 </div>
  <p id="demo"></p>
 
