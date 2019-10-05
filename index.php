@@ -22,9 +22,9 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Startseite <span class="sr-only"></span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Admin Login</a>
-          </li>
+          <form class="form-inline mt-2 mt-md-0">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Admin Login</button>
+        </form>
        
         </ul>
       </div>
@@ -32,7 +32,8 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-    <h1>Hilf uns bei einer Definition</h1>
+      <div class="jumbotron">
+            <h1>Hilf uns bei einer Definition</h1>
   
   
 
@@ -63,7 +64,7 @@
 </div>
 
 </main>
-
+</div>
  <footer class="footer">
       <div class="container">
         <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele</span>
