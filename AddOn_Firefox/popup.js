@@ -9,10 +9,31 @@ if (window.localStorage["curia::selectedTerm"] && window.localStorage["curia::se
     
     description.innerText = "Lade ...";
 
-    url = API_URL + encodeURIComponent(window.localStorage["curia::selectedTerm"]);
+    originalTerm = window.localStorage["curia::selectedTerm"];
     window.localStorage["curia::selectedTerm"] = undefined;
 
-    fetch(url, {"mode": "cors"})
+    makeCuriaGeneralRequest(originalTerm, function () {
+        if (originalTerm.slice(-1) == "s") {
+            makeCuriaGeneralRequest(originalTerm.slice(0, -1), null);
+        } else if (originalTerm.slice(-5) == "innen") {
+            makeCuriaGeneralRequest(originalTerm.slice(0, -5), null);
+        } else if (originalTerm.slice(-2) == "in") {
+            makeCuriaGeneralRequest(originalTerm.slice(0, -2), null);
+        } else if (originalTerm.slice(-2) == "en") {
+            makeCuriaGeneralRequest(originalTerm.slice(0, -2), null);
+        } else return -1;
+    })
+
+} else {
+    term.innerText = "Kein Begriff gewählt";
+    term.classList.add("is-danger");
+    description.innerHTML = "<p>Du hast noch keinen Begriff gewählt, den CURIA erklären soll. Markiere einen Text auf der Seite und wähle im Kontextmenü (Rechte Maustaste) den Punkt <em>Begriff mit CURIA erklären</em>.</p>";
+}
+
+
+function makeCuriaGeneralRequest(oterm, if_term_not_existant_callback) {
+
+    fetch(API_URL + encodeURIComponent(oterm), {"mode": "cors"})
         .then(function (response) {
             if (response.status !== 200) {
                 console.log(response.status);
@@ -23,12 +44,19 @@ if (window.localStorage["curia::selectedTerm"] && window.localStorage["curia::se
                     if(data.response == "data") {
                         description.innerHTML = "<p>" + data.definition + "</p>Zuletzt bearbeitet: " + data.last_update + ", Kategorie: " + data.category;
                     } else {
-                        term.classList.add("is-danger");
-                        description.innerText = "Ein Fehler ist aufgetreten: " + data.errno + " (" + data.reason + ") ";
                         if (data.errno == 2) {
-                            description.innerText = "Der Begriff \"" + term.innerText + "\" wurde leider nicht gefunden."
-                            term.innerText = "Begriff nicht gefunden"
+                            r = -1;
+                            if (if_term_not_existant_callback) {
+                                r = if_term_not_existant_callback()
+                            }
+                            if (r == -1) {
+                                term.classList.add("is-danger");
+                                description.innerText = "Der Begriff \"" + term.innerText + "\" wurde leider nicht gefunden."
+                                term.innerText = "Begriff nicht gefunden"
+                            }
                         } else {
+                            term.classList.add("is-danger");
+                            description.innerText = "Ein Fehler ist aufgetreten: " + data.errno + " (" + data.reason + ") ";
                             term.innerText = "Ein Fehler ist aufgetreten."
                         }
                     }
@@ -42,8 +70,4 @@ if (window.localStorage["curia::selectedTerm"] && window.localStorage["curia::se
             description.innerText = "Ein unbekannter Fehler ist aufgetreten. Bitte @luap42 auf Twitter melden.";
         });
 
-} else {
-    term.innerText = "Kein Begriff gewählt";
-    term.classList.add("is-danger");
-    description.innerHTML = "<p>Du hast noch keinen Begriff gewählt, den CURIA erklären soll. Markiere einen Text auf der Seite und wähle im Kontextmenü (Rechte Maustaste) den Punkt <em>Begriff mit CURIA erklären</em>.</p>";
 }
