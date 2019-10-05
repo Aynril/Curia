@@ -5,9 +5,7 @@
 <title>CURIA - Endlich mitreden bei politischen Diskussionen</title>
 <link href="curia.css" rel = stylesheet>
  <!-- sweet alerts -->
- <script src="https://it-services-rau.de/sweetalerts/dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://it-services-rau.de/sweetalerts/dist/sweetalert.css">
-    <script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 
