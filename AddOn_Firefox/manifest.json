@@ -25,7 +25,8 @@
     "permissions": [
       "<all_urls>",
       "activeTab",
-      "contextMenus"
+      "contextMenus",
+      "webRequest"
     ]
   
   }
