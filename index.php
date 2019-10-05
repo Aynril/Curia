@@ -18,15 +18,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Startseite <span class="sr-only"></span></a>
-</li>
-       
-        </ul>
+
         <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Admin Login</a></li>
-    </ul>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Admin Login <span class="sr-only"></span></a>
+      </li>
+        </ul>
       </div>
     </nav>
 
