@@ -40,7 +40,7 @@
        <div class="form-group">
     <label for="kategorie">Kategorie</label>
     <select class="form-control" name="kategorie" id="kategorie">
-    <option>allgemeines</option>
+            <option>Allgemeines</option>
             <option>Länder</option>	
             <option>Gesetze</option>
             <option>Parlament</option>
