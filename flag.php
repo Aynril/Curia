@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="Logo.ico">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CURIA - Endlich mitreden bei politischen Diskussionen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- sweet alerts -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+ <!-- Brand / Logo-->
+ <a class="navbar-brand" href="#">CURIA</a>
+
+</nav>
+
+   <!-- Begin page content -->
+   <main role="main" class="container">
+     <div class="jumbotron">
+         <h1>Begriff melden</h1>
+     </div>
+
+     <?php
+     $connection = include "Server_PHP/connect.php";
+     $id = $_GET["id"] ?? die("Kein Begriff gefunden!");
+     $command = $connection->prepare("SELECT * FROM begriffe WHERE begriffe.id=? AND begriffe.aktiv=1");
+     $command->execute([$id]);
+     if($command->rowCount() != 1) die("Kein Begriff gefunden!");
+     $column = $command->fetchObject();
+     ?>
+     <p>Warum willst du diese Definition melden?
+     <pre>
+     <?php
+     echo $colum->begriff . "<br>" . $column->definitiion;
+     ?>
+ </pre>
+</main>
+</div>
+<footer class="footer">
+     <div class="container">
+       <span class="text-muted">Jugend hackt 2019, Berlin</span>
+       <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele &middot; Version: <?php system("git rev-list --count HEAD") ?></span>
+
+     </div>
+   </footer>
+</body>
+</html>
