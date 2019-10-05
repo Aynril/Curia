@@ -45,6 +45,6 @@
     Domain: Clemens Rau <br/>
     Redaktion: Neele
  </p>
- <?php if($GET['info'] == "success"){ swal("Success", "You successfully managed to safe some data", "success");}?>
+ <?php if($GET['info'] == "success"){ <script>swal("Success", "You successfully managed to safe some data", "success")</script>;}?>
 </body>
 </html> 
