@@ -46,7 +46,10 @@
     Redaktion: Neele
  </p>
  <?php if($_GET['info'] == "success"){ 
-   echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
+      echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
+   }
+   else {
+      echo '<script>swal("Failure", "Saving didn´t work", "failure")</script>';
    }
    ?>
 </body>
