@@ -37,17 +37,20 @@
        <label for="text">Deine Definition:</label>
        <textarea id="text" name="definition" cols="35" rows="4" required></textarea> 
 
-    <label></br>Kategorie:
-        <select name="kategorie" required>
-            <option>allgemeines</option>
+       <div class="form-group">
+    <label for="kategorie">Kategorie</label>
+    <select class="form-control" name="kategorie" id="kategorie">
+    <option>allgemeines</option>
             <option>Länder</option>	
             <option>Gesetze</option>
             <option>Parlament</option>
             <option>Parteien</option>
             <option>Verfassung</option>
             <option>Ziviles</option>	
-        </select>
-    </label></br>
+    </select>
+  </div>
+            
+     
     <label for="Nicknameinput" id ="begriff">Nickname:</label>
 
       <input id="Nicknameinput" type="text" name="autor"></br>
