@@ -20,7 +20,18 @@ if (window.localStorage["curia::selectedTerm"] && window.localStorage["curia::se
                 description.innerText = "Ein unbekannter Fehler ist aufgetreten. Bitte @luap42 auf Twitter melden.";
             } else {
                 response.json().then(function (data) {
-                    description.innerHTML = "<p>" + data.definition + "</p>Zuletzt bearbeitet: " + data.last_update + ", Kategorie: " + data.category;
+                    if(data.response == "data") {
+                        description.innerHTML = "<p>" + data.definition + "</p>Zuletzt bearbeitet: " + data.last_update + ", Kategorie: " + data.category;
+                    } else {
+                        term.classList.add("is-danger");
+                        description.innerText = "Ein Fehler ist aufgetreten: " + data.errno + " (" + data.reason + ") ";
+                        if (data.errno == 2) {
+                            description.innerText = "Der Begriff \"" + term.innerText + "\" wurde leider nicht gefunden."
+                            term.innerText = "Begriff nicht gefunden"
+                        } else {
+                            term.innerText = "Ein Fehler ist aufgetreten."
+                        }
+                    }
                 }.bind(this));
             }
         }.bind(this))
