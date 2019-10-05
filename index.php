@@ -30,9 +30,10 @@
   
 
 <form action="Server_PHP/input.php" method="post"> 
-        <label for="binput" id ="begriff">Begriff:</label>
-
-      <input id="binput" type="text" name="begriff" required></br>
+<div class="form-group">
+    <label for="exampleFormControlInput1">Begriff</label>
+    <input type="begriff" class="form-control" required>
+  </div><br/>
        <label for="text">Deine Definition:</label>
        <textarea id="text" name="definition" cols="35" rows="4" required></textarea> 
 
@@ -50,7 +51,7 @@
     <label for="Nicknameinput" id ="begriff">Nickname:</label>
 
       <input id="Nicknameinput" type="text" name="autor"></br>
-    <input type="submit" class="button" value="Speichern">
+    <input type="submit" btn btn-lg btn-primary value="Speichern">
     <p>und auch:<br><a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"><i class='fa fa-firefox'></i> JETZT FIREFOX ERWEITERUNG LADEN</button></a></p>
  </form>
 </div>
