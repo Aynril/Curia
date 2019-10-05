@@ -14,5 +14,5 @@ $kategorie = htmlspecialchars($_POST['kategorie']);
 $statement = $connection->prepare("INSERT INTO `begriffe` (`id`, `begriff`, `definition`, `aktiv`, `zuletzt_aktualisiert`, `autor`, `kategorie`) VALUES (NULL, '$begriff', '$definition', '1', CURRENT_TIMESTAMP, '$autor', '$kategorie')");
 $res = $statement->execute();
 
-header("Location: ../index.html?info=success");
+header("Location: ../index.php?info=success");
 
