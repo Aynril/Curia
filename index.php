@@ -12,6 +12,23 @@
 </head>
 <body>
 
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">Curia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Startseite <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Admin Login</a>
+          </li>
+       
+        </ul>
+      </div>
+    </nav>
 
     <!-- Begin page content -->
     <main role="main" class="container">
@@ -44,24 +61,19 @@
     <p>und auch:<br><a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em">Firefox Erweiterung herunterladen</a></p>
  </form>
 </div>
- <p>
-   Impressum: <br/>
-    Domain: Clemens Rau <br/>
-    Redaktion: Neele
- </p>
 
 </main>
 
  <footer class="footer">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele</span>
       </div>
     </footer>
 
  <?php if($_GET['info'] == "success"){ 
       echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
    }
-   else if($_GET['info'] == "failure"){
+   else {
       echo '<script>swal("Failure", "Saving didn´t work", "error")</script>';
    }
    ?>
