@@ -14,7 +14,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">CURIA</a>
+  <a class="navbar-brand" href="/">CURIA</a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -31,12 +31,12 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <div class="jumbotron">
-        <img src="https://jugendhackt.org/wp-content/themes/jugend-hackt/library/images/logo.svg" alt="Cinque Terre" class="img-fluid"> 
+        <img src="https://jugendhackt.org/wp-content/themes/jugend-hackt/library/images/logo.svg" alt="Cinque Terre" class="img-fluid">
             <h1>Hilf uns bei einer Definition</h1>
-  
-  
 
-<form action="Server_PHP/input.php" method="post"> 
+
+
+<form action="Server_PHP/input.php" method="post">
 <div class="form-group">
     <label for="begriff">Begriff</label>
     <input type="begriff" name="begriff" id="begriff" class="form-control" placeholder="Begriff" required>
@@ -50,16 +50,16 @@
     <label for="kategorie">Kategorie</label>
     <select class="form-control" name="kategorie" id="kategorie">
             <option>Allgemeines</option>
-            <option>Länder</option>	
+            <option>Länder</option>
             <option>Gesetze</option>
             <option>Parlament</option>
             <option>Parteien</option>
             <option>Verfassung</option>
-            <option>Ziviles</option>	
+            <option>Ziviles</option>
     </select>
   </div>
-            
-     
+
+
   <div class="form-group">
     <label for="exampleFormControlInput1">Nickname</label>
     <input type="text" class="form-control" name="autor" id="exampleFormControlInput1" placeholder="Nickname"></br>
@@ -75,7 +75,7 @@
       </div>
     </footer>
 
- <?php if($_GET['info'] == "success"){ 
+ <?php if($_GET['info'] == "success"){
       echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
    }
    else if($_GET['info'] == "failure"){
@@ -83,4 +83,4 @@
    }
    ?>
 </body>
-</html> 
+</html>

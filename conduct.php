@@ -14,9 +14,9 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-light navbar-light">
  <!-- Brand / Logo-->
- <a class="navbar-brand" href="#">CURIA</a>
+ <a class="navbar-brand" href="/">CURIA</a>
 
 </nav>
 
