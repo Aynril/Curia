@@ -9,3 +9,7 @@ div{
     text-align: center;
     font-size: 18px
 }
+body { background-image:url(https://jugendhackt.org/wp-content/themes/jugend-hackt/library/images/logo.svg);
+    background-repeat:no-repeat;
+    background-size:cover, bottom;
+}

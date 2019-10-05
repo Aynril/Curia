@@ -1,4 +1,4 @@
-API_URL = "http://116.203.31.114/output.php?term="
+API_URL = "http://116.203.31.114/Server_PHP/output.php?term="
 
 term = document.getElementById("term");
 description = document.getElementById("description")
