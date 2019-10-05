@@ -1,6 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" href="Logo.ico">
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>CURIA - Endlich mitreden bei politischen Diskussionen</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +12,23 @@
 </head>
 <body>
 
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">Curia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Startseite <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Admin Login</a>
+          </li>
+       
+        </ul>
+      </div>
+    </nav>
 
     <!-- Begin page content -->
     <main role="main" class="container">
