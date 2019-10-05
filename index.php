@@ -26,7 +26,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"><i class='fa fa-firefox'></i> JETZT FIREFOX ERWEITERUNG LADEN</button></a>
+      <a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"><i class='fa fa-download'></i> JETZT <i class='fa fa-firefox'></i> FIREFOX ERWEITERUNG LADEN</button></a>
     </form>
   </div>
 </nav>
@@ -69,7 +69,6 @@
     <label for="exampleFormControlInput1">Nickname</label>
     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nickname"></br>
     <input type="submit" class="btn btn-lg btn-primary" value="Speichern">
-    <p>und auch:<br><a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"><i class='fa fa-firefox'></i> JETZT FIREFOX ERWEITERUNG LADEN</button></a></p>
  </form>
 </div>
 
@@ -77,9 +76,7 @@
 </div>
  <footer class="footer">
       <div class="container">
-        <span class="text-muted">Jugend hackt 2019, Berlin<?php system("git rev-list --count HEAD") ?>-<?php system("git rev-parse --short HEAD") ?></span>
-        <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele &middot; Version: <?php system("git rev-list --count HEAD") ?></span>
-
+        <span class="text-muted">&copy; by Jugend hackt 2019, Berlin</span>
       </div>
     </footer>x
 
