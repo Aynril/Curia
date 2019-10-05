@@ -1,6 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" href="Logo.ico">
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>CURIA - Endlich mitreden bei politischen Diskussionen</title>
 <link href="curia.css" rel = stylesheet>
