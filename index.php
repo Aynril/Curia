@@ -31,8 +31,8 @@
 
 <form action="Server_PHP/input.php" method="post"> 
 <div class="form-group">
-    <label for="exampleFormControlInput1">Begriff</label>
-    <input type="begriff" class="form-control" required>
+    <label for="begriff">Begriff</label>
+    <input type="begriff" id="begriff" class="form-control" required>
   </div><br/>
        <label for="text">Deine Definition:</label>
        <textarea id="text" name="definition" cols="35" rows="4" required></textarea> 
