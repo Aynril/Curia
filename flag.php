@@ -37,9 +37,9 @@
      <p>Warum willst du diese Definition melden?
      <pre>
      <?php
-     echo $colum->begriff . "<br>" . $column->definitiion;
+     echo $column->begriff . "<br>" . $column->definition;
      ?>
- </pre>
+     </pre>
 </main>
 </div>
 <footer class="footer">
