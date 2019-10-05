@@ -1,3 +1,11 @@
+<?php
+    $pdo = new PDO(
+    'mysql:host=116.203.31.114;dbname=curia',
+    'jhberlin2019',
+    'jhberlin2019');
+    $statement = $pdo->prepare("SELECT * FROM `begriffe`");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +16,7 @@
     <title>Just admin things</title>
 </head>
 <body>
-<table class="table">
+<table class="table table-hover table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -19,24 +27,20 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+        <?php 
+            $statement ->execute(); 
+            //$result = $statement->fetchAll();
+            while($result = $statement->fetch(PDO::FETCH_ASSOC)):
+            ?>
+            <tr>
+                <td><?$result["id"]?></td>
+                <td><?$result["begriff"]?></td>
+                <td><?$result["definition"]?></td>
+                <td><?$result["kategorie"]?></td>
+                <td><?$result["autor"]?></td>
+            </tr>
+            <?php endwhile ?>
+
   </tbody>
 </table>
 </body>
