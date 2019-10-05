@@ -13,11 +13,28 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand / Logo-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">CURIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-</nav> 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"><i class='fa fa-firefox'></i> JETZT FIREFOX ERWEITERUNG LADEN</button></a>
+    </form>
+  </div>
+</nav>
 
     <!-- Begin page content -->
     <main role="main" class="container">
@@ -42,7 +59,7 @@
        <div class="form-group">
     <label for="kategorie">Kategorie</label>
     <select class="form-control" name="kategorie" id="kategorie">
-    <option>allgemeines</option>
+            <option>Allgemeines</option>
             <option>Länder</option>	
             <option>Gesetze</option>
             <option>Parlament</option>
