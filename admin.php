@@ -33,11 +33,11 @@ require("Server_PHP/database.php");
             while(($result = $statement->fetch(PDO::FETCH_ASSOC)) !== false):
             ?>
             <tr>
-                <td><?php $result["id"]?></td>
-                <td><?php $result["begriff"]?></td>
-                <td><?php $result["definition"]?></td>
-                <td><?php $result["kategorie"]?></td>
-                <td><?php $result["autor"]?></td>
+                <td><?php echo $result["id"]?></td>
+                <td><?php echo $result["begriff"]?></td>
+                <td><?php echo $result["definition"]?></td>
+                <td><?php echo $result["kategorie"]?></td>
+                <td><?php echo $result["autor"]?></td>
             </tr>
             <?php endwhile ?>
 
