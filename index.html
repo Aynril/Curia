@@ -12,12 +12,12 @@
 <form action="Server_PHP/input.php" method="post"> 
         <label for="binput" id ="begriff">Begriff:</label>
 
-      <input id="binput" type="text" name="begriff"></br>
+      <input id="binput" type="text" name="begriff" required></br>
        <label for="text">Deine Definition:</label>
-       <textarea id="text" name="definition" cols="35" rows="4"></textarea> 
+       <textarea id="text" name="definition" cols="35" rows="4" required></textarea> 
 
     <label></br>Kategorie:
-        <select name="kategorie">
+        <select name="kategorie" required>
             <option>allgemeines</option>
             <option>Länder</option>	
             <option>Gesetze</option>
@@ -30,14 +30,18 @@
     <label for="Nicknameinput" id ="begriff">Nickname:</label>
 
       <input id="Nicknameinput" type="text" name="autor"></br>
-    <input type="submit" value="Absenden">
+<<<<<<< HEAD
+    <input type="submit" class="button" value="Speichern">
+=======
     <p>und auch:<br><a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em">Firefox Erweiterung herunterladen</a></p>
+>>>>>>> 6afdf88134365841b0d7b0598421dbec3a0b6334
  </form>
 </div>
  <p id="demo"></p>
  <p>
-     Domain Inhaber: Clements Rau </br>
-     Redaktion: Neele
+   Impressum: <br/>
+    Domain: Clemens Rau 
+    Redaktion: Neele
  </p>
 </body>
 </html> 
