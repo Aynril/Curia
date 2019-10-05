@@ -74,7 +74,7 @@
  <?php if($_GET['info'] == "success"){ 
       echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
    }
-   else {
+   else if($_GET['info'] == "failure"){
       echo '<script>swal("Failure", "Saving didn´t work", "error")</script>';
    }
    ?>
