@@ -21,12 +21,12 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Startseite <span class="sr-only"></span></a>
-          </li>
-          <form class="form-inline mt-2 mt-md-0">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Admin Login</button>
-        </form>
+</li>
        
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Admin Login</a></li>
+    </ul>
       </div>
     </nav>
 
