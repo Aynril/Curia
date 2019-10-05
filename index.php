@@ -21,8 +21,12 @@ body {
 }
 </style>
 
-  <a class="navbar-brand" href="/">CURIA</a>
 
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+
+      
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
