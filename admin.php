@@ -8,38 +8,36 @@
     <title>Just admin things</title>
 </head>
 <body>
-<table>
+<table class="table">
+  <thead>
     <tr>
-        <th>ID</th>
-        <th>Begriff</th>
-        <th>Definition</th>
-        <th>Kategorie</th>
-        <th>Autor</th>
+      <th scope="col">#</th>
+      <th scope="col">Begriff</th>
+      <th scope="col">Definition</th>
+      <th scope="col">Kategorie</th>
+      <th scope="col">Autor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan="3"> Diese Fußzeile erstreckt sich über die ganze Tabelle. </td>
-    </tr>
+  </tbody>
 </table>
 </body>
 </html>
