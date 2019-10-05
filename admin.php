@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 
-require("database.php");
+require("Server_PHP/database.php");
     $statement = $pdo->prepare("SELECT * FROM `begriffe`");
 ?>
 
