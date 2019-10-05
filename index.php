@@ -74,14 +74,14 @@
 </div>
  <footer class="footer">
       <div class="container">
-        <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele, Version <?php system("git rev-list --count HEAD") ?>-<?php system("git rev-parse --short HEAD") ?></span>
+        <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele &middot; Version: <?php system("git rev-list --count HEAD") ?></span>
       </div>
     </footer>
 
  <?php if($_GET['info'] == "success"){ 
       echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
    }
-   else {
+   else if($_GET['info'] == "failure"){
       echo '<script>swal("Failure", "Saving didn´t work", "error")</script>';
    }
    ?>
