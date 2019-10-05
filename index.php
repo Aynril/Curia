@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top">
   <a class="navbar-brand" href="/">CURIA</a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
