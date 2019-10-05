@@ -34,8 +34,10 @@
     <label for="begriff">Begriff</label>
     <input type="begriff" id="begriff" class="form-control" required>
   </div><br/>
-       <label for="text">Deine Definition:</label>
-       <textarea id="text" name="definition" cols="35" rows="4" required></textarea> 
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Nickname</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+  </div>
 
        <div class="form-group">
     <label for="kategorie">Kategorie</label>
@@ -67,7 +69,7 @@
         <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele &middot; Version: <?php system("git rev-list --count HEAD") ?></span>
 
       </div>
-    </footer>
+    </footer>x
 
  <?php if($_GET['info'] == "success"){ 
       echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
