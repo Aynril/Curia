@@ -34,17 +34,21 @@
      if($command->rowCount() != 1) die("Kein Begriff gefunden!");
      $column = $command->fetchObject();
      ?>
-     <p>Warum willst du diese Definition melden?
+     <p class="lead">Du kannst Begriffe, die gegen unseren <a href="conduct.php">Code of Conduct</a> verstoßen, melden.</p>
+     <p>Warum willst du diese Definition melden?</p>
      <pre>
      <?php
      echo $column->begriff . "<br>" . $column->definition;
      ?>
      </pre>
+     <form action="" method="post">
      <div class="form-group">
      <label for="kommentar">Grund</label>
      <input type="kommentar" name="kommentar" id="kommentar" class="form-control" required>
    </div>
-   <p>Hinweis: Mit dem Absenden der Meldung speichern wir (aus Schutzgründen) deine IP-Adresse</p>
+   <p>Hinweis: Mit dem Absenden der Meldung speichern wir (aus Schutzgründen) deine IP-Adresse.</p>
+    <button type="submit" class="btn btn-primary">Melden</button>
+    </form>
 </main>
 </div>
 <footer class="footer">
