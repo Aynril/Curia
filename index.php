@@ -26,7 +26,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"><i class='fa fa-download'></i> JETZT <i class='fa fa-firefox'></i> ERWEITERUNG LADEN</button></a>
+      <a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"> JETZT <i class='fa fa-firefox'></i> ERWEITERUNG LADEN</button></a>
     </form>
   </div>
 </nav>
