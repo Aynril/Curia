@@ -55,9 +55,9 @@
   </div>
             
      
-    <label for="Nicknameinput" id ="begriff">Nickname:</label>
-
-      <input id="Nicknameinput" type="text" name="autor"></br>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nickname</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nickname"></br>
     <input type="submit" class="btn btn-lg btn-primary" value="Speichern">
     <p>und auch:<br><a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em"><button type="button" class="btn btn-warning btn-lg " data_but="btn-xs"><i class='fa fa-firefox'></i> JETZT FIREFOX ERWEITERUNG LADEN</button></a></p>
  </form>
