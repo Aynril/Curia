@@ -34,7 +34,7 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <div class="jumbotron">
-        <img src="https://jugendhackt.org/wp-content/themes/jugend-hackt/library/images/logo.svg" alt="Cinque Terre"> 
+        <img src="https://jugendhackt.org/wp-content/themes/jugend-hackt/library/images/logo.svg" alt="Cinque Terre" class="img-fluid"> 
             <h1>Hilf uns bei einer Definition</h1>
   
   
