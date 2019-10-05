@@ -13,7 +13,15 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+<style>
+  /* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+</style>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="/">CURIA</a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
