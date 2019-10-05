@@ -12,20 +12,11 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <a class="navbar-brand" href="#">Curia</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand / Logo-->
+  <a class="navbar-brand" href="#">CURIA</a>
 
-        <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Admin Login <span class="sr-only"></span></a>
-      </li>
-        </ul>
-      </div>
-    </nav>
+</nav> 
 
     <!-- Begin page content -->
     <main role="main" class="container">
@@ -64,7 +55,11 @@
 </div>
  <footer class="footer">
       <div class="container">
+<<<<<<< HEAD
         <span class="text-muted">Jugend hackt 2019, Berlin<?php system("git rev-list --count HEAD") ?>-<?php system("git rev-parse --short HEAD") ?></span>
+=======
+        <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele &middot; Version: <?php system("git rev-list --count HEAD") ?></span>
+>>>>>>> 4bab64bde4cc2136ec2e982ea62504c762c05f9a
       </div>
     </footer>
 
