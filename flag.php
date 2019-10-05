@@ -40,6 +40,11 @@
      echo $column->begriff . "<br>" . $column->definition;
      ?>
      </pre>
+     <div class="form-group">
+     <label for="kommentar">Grund</label>
+     <input type="kommentar" name="kommentar" id="kommentar" class="form-control" required>
+   </div>
+   <p>Hinweis: Mit dem Absenden der Meldung speichern wir (aus Schutzgründen) deine IP-Adresse</p>
 </main>
 </div>
 <footer class="footer">
