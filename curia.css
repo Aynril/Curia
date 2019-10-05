@@ -2,13 +2,24 @@ h1{
     text-align: center;
 }
 html{
-    font-family: "open sans", Arial, Helvetica, sans-serif
+    font-family: "open sans", Arial, Helvetica, sans-serif;
 }
 
 div{ 
-    text-align: center;
-    font-size: 18px
+    text-align: left;
+    font-size: 18px;
+    max-width: 60%;
+    margin-left: 500px;
+    margin-top: 50px;
+    line-height: 5em;
 }
+/*
+#begriff{
+    text-align: left;
+    margin-left: 100px;
+}
+*/
+
 body { background-image:url(https://jugendhackt.org/wp-content/themes/jugend-hackt/library/images/logo.svg);
     background-repeat:no-repeat;
     background-size:cover, bottom;
