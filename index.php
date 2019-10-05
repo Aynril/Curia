@@ -39,11 +39,11 @@
 <form action="Server_PHP/input.php" method="post"> 
 <div class="form-group">
     <label for="begriff">Begriff</label>
-    <input type="begriff" id="begriff" class="form-control" placeholder="Begriff" required>
+    <input type="begriff" name="begriff" id="begriff" class="form-control" placeholder="Begriff" required>
   </div><br/>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Definition</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Beschreibe das Wort einfach und in deinen eigenene Worten"></textarea>
+    <textarea class="form-control" name="definition" id="exampleFormControlTextarea1" rows="4" placeholder="Beschreibe das Wort einfach und in deinen eigenene Worten"></textarea>
   </div>
 
        <div class="form-group">
@@ -62,7 +62,7 @@
      
   <div class="form-group">
     <label for="exampleFormControlInput1">Nickname</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nickname"></br>
+    <input type="text" class="form-control" name="autor" id="exampleFormControlInput1" placeholder="Nickname"></br>
     <input type="submit" class="btn btn-lg btn-primary" value="Speichern">
  </form>
 </div>
