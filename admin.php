@@ -1,3 +1,4 @@
+error
 <?php
     $pdo = new PDO(
     'mysql:host=116.203.31.114;dbname=curia',
@@ -34,11 +35,11 @@
             while(($result = $statement->fetch(PDO::FETCH_ASSOC)) !== false):
             ?>
             <tr>
-                <td><?$result["id"]?></td>
-                <td><?$result["begriff"]?></td>
-                <td><?$result["definition"]?></td>
-                <td><?$result["kategorie"]?></td>
-                <td><?$result["autor"]?></td>
+                <td><?php $result["id"]?></td>
+                <td><?php $result["begriff"]?></td>
+                <td><?php $result["definition"]?></td>
+                <td><?php $result["kategorie"]?></td>
+                <td><?php $result["autor"]?></td>
             </tr>
             <?php endwhile ?>
 
