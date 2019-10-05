@@ -36,7 +36,7 @@
 
 
 
-<form action="Server_PHP/input.php" method="post">
+<form action="Server_PHP/input.php" method="POST">
 <div class="form-group">
     <label for="begriff">Begriff</label>
     <input type="begriff" name="begriff" id="begriff" class="form-control" placeholder="Begriff" required>
