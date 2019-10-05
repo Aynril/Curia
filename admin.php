@@ -26,11 +26,12 @@
       <th scope="col">Autor</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody>testing
         <?php 
-            $statement ->execute(); 
+            $statement->execute(); 
+            
             //$result = $statement->fetchAll();
-            while($result = $statement->fetch(PDO::FETCH_ASSOC)):
+            while(($result = $statement->fetch(PDO::FETCH_ASSOC)) !== false):
             ?>
             <tr>
                 <td><?$result["id"]?></td>
