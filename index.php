@@ -64,7 +64,7 @@
 </div>
  <footer class="footer">
       <div class="container">
-        <span class="text-muted">Impressum &middot; &copy; Domain by Clemens Rau &middot; Redaktion: Neele, Version <?php system("git rev-list --count HEAD") ?>-<?php system("git rev-parse --short HEAD") ?></span>
+        <span class="text-muted">Jugend hackt 2019, Berlin<?php system("git rev-list --count HEAD") ?>-<?php system("git rev-parse --short HEAD") ?></span>
       </div>
     </footer>
 
