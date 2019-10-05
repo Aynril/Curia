@@ -8,15 +8,15 @@
 
 <h1 style="color:rgb(6, 27, 143);">Hilf uns bei einer Definition</h1>
 <div>
-<form action="form.php" method="post"> 
+<form action="Server_PHP/input.php" method="post"> 
         <label for="binput" id ="begriff">Begriff:</label>
 
       <input id="binput" type="text" name="begriff"></br>
        <label for="text">Deine Definition:</label>
-       <textarea id="text" name="text" cols="35" rows="4"></textarea> 
+       <textarea id="text" name="definition" cols="35" rows="4"></textarea> 
 
     <label></br>Kategorie:
-        <select name="top5">
+        <select name="kategorie">
             <option>allgemeines</option>
             <option>Länder</option>	
             <option>Gesetze</option>
@@ -25,16 +25,17 @@
             <option>Verfassung</option>
             <option>Ziviles</option>	
         </select>
-    </label>
+    </label></br>
+    <label for="Nicknameinput" id ="begriff">Nickname:</label>
+
+      <input id="Nicknameinput" type="text" name="autor"></br>
     <input type="submit" value="Absenden">
  </form>
 </div>
  <p id="demo"></p>
-
- <script>
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "Danke für deine Definition";
-    }
-    </script> 
+ <p>
+     Domain Inhaber: Clements Rau </br>
+     Redaktion: Neele
+ </p>
 </body>
 </html> 
