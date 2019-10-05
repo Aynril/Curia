@@ -7,7 +7,7 @@
     "description": "CURIA ist eine sehr gute Anwendung, die im Browser Erklärungen für politische Fachwörter anzeigt.",
   
     "icons": {
-      "48": "icons/border-48.png"
+      "48": "icons/Logo.png"
     },
 
     "background": {
@@ -17,7 +17,7 @@
     
 
     "browser_action": {
-      "default_icon": "icons/border-32.png",
+      "default_icon": "icons/Logo.png",
       "default_title": "CURIA",
       "default_popup": "curia.html"
     },
