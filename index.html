@@ -12,12 +12,12 @@
 <form action="Server_PHP/input.php" method="post"> 
         <label for="binput" id ="begriff">Begriff:</label>
 
-      <input id="binput" type="text" name="begriff"></br>
+      <input id="binput" type="text" name="begriff" required></br>
        <label for="text">Deine Definition:</label>
-       <textarea id="text" name="definition" cols="35" rows="4"></textarea> 
+       <textarea id="text" name="definition" cols="35" rows="4" required></textarea> 
 
     <label></br>Kategorie:
-        <select name="kategorie">
+        <select name="kategorie" required>
             <option>allgemeines</option>
             <option>Länder</option>	
             <option>Gesetze</option>
