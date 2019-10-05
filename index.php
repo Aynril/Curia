@@ -11,10 +11,11 @@
 <body>
 
 
+    <!-- Begin page content -->
+    <main role="main" class="container">
+    <h1>Hilf uns bei einer Definition</h1>
+    </main>
 
-
-<h1 style="color:rgb(6, 27, 143);">Hilf uns bei einer Definition</h1>
-<div>
 <form action="Server_PHP/input.php" method="post"> 
         <label for="binput" id ="begriff">Begriff:</label>
 
@@ -40,12 +41,18 @@
     <p>und auch:<br><a href="/AddOn_Firefox/web-ext-artifacts/curia-1.0-an+fx.xpi" style="font-size: 1.5em">Firefox Erweiterung herunterladen</a></p>
  </form>
 </div>
- <p id="demo"></p>
  <p>
    Impressum: <br/>
     Domain: Clemens Rau <br/>
     Redaktion: Neele
  </p>
+
+ <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
  <?php if($_GET['info'] == "success"){ 
    echo '<script>swal("Success", "You successfully managed to safe some data", "success")</script>';
    }
