@@ -47,7 +47,7 @@
     <input type="begriff" id="begriff" class="form-control" required>
   </div><br/>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Nickname</label>
+    <label for="exampleFormControlTextarea1">Definition</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
   </div>
 
