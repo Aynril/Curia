@@ -11,6 +11,14 @@
 </head>
 <body>
 
+
+<script>
+
+swal("Good job!", "You clicked the button!", "success");
+
+</script>
+
+
 <h1 style="color:rgb(6, 27, 143);">Hilf uns bei einer Definition</h1>
 <div>
 <form action="Server_PHP/input.php" method="post"> 
