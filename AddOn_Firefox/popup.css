@@ -59,3 +59,13 @@ a:hover { border-bottom: 1px dotted #a00; }
     font-size: 14px;
     font-weight: bold;
 }
+
+h1.is-danger,
+h2.is-danger,
+h3.is-danger,
+h4.is-danger,
+h5.is-danger,
+h6.is-danger {
+    font-weight: normal;
+    color: #a00;
+}
