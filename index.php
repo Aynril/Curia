@@ -44,11 +44,11 @@
 <form action="Server_PHP/input.php" method="post"> 
 <div class="form-group">
     <label for="begriff">Begriff</label>
-    <input type="begriff" id="begriff" class="form-control" required>
+    <input type="begriff" id="begriff" class="form-control" placeholder="Begriff" required>
   </div><br/>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Definition</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Beschreibe das Wort einfach und in deinen eigenene Worten"></textarea>
   </div>
 
        <div class="form-group">
