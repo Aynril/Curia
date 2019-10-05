@@ -13,7 +13,9 @@ if (window.localStorage["curia::selectedTerm"] && window.localStorage["curia::se
     window.localStorage["curia::selectedTerm"] = undefined;
 
     makeCuriaGeneralRequest(originalTerm, function () {
-        if (originalTerm.slice(-1) == "s") {
+        if (originalTerm.slice(-2) == "es") {
+            makeCuriaGeneralRequest(originalTerm.slice(0, -2), null);
+        } else if (originalTerm.slice(-1) == "s") {
             makeCuriaGeneralRequest(originalTerm.slice(0, -1), null);
         } else if (originalTerm.slice(-5) == "innen") {
             makeCuriaGeneralRequest(originalTerm.slice(0, -5), null);
