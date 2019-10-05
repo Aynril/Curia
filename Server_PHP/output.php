@@ -2,6 +2,7 @@
 error_reporting(0); // Safety: no error reporting
 
 header("Content-type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Origin: *");
 
 
 // Constants
