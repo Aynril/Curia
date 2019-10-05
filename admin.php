@@ -1,9 +1,7 @@
-error
 <?php
-    $pdo = new PDO(
-    'mysql:host=116.203.31.114;dbname=curia',
-    'jhberlin2019',
-    'jhberlin2019');
+error_reporting(E_ALL);
+
+require("database.php");
     $statement = $pdo->prepare("SELECT * FROM `begriffe`");
 ?>
 
