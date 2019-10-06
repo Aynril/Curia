@@ -87,13 +87,46 @@ require("Server_PHP/database.php");
                 <td><?php echo $result["definition"]?></td>
                 <td><?php echo $result["kategorie"]?></td>
                 <td><?php echo $result["autor"]?></td>
-                <td>button type="button" class="btn btn-danger btn-sm " data_but="btn-xs"><i class='fa fa-wrench'></i> edit</button></td>
+                <td><button type="button" class="btn btn-danger btn-sm " data_but="btn-xs" data-toggle="modal" data-target="#modal_<?php echo $result["id"]?>"><i class='fa fa-wrench'></i> edit</button></td>
             </tr>
             <?php endwhile ?>
 
             </tbody>
 </table>
 </main>
+
+<?php 
+            $statement->execute(); 
+            
+            while(($result = $statement->fetch(PDO::FETCH_ASSOC)) !== false):
+            ?>
+                
+<!-- The Modal -->
+<div class="modal" id="modal_<?php echo $result["id"]?>">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Editier <?php echo $result["begriff"]?></h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        kommt bald....
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+            <?php endwhile ?>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
 </html>
