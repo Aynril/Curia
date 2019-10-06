@@ -1,3 +1,28 @@
+<?php
+
+$connection = include "Server_PHP/connect.php";
+$id = $_GET["id"] ?? die("Kein Begriff gefunden!");
+
+if(!empty($_POST["kommentar"])) {
+    $stmt = $connection->prepare("INSERT INTO meldungen VALUES (NULL, ?, ?, ?, 0, 0)");
+    $stmt->execute([$id, $_SERVER['REMOTE_ADDR'], htmlspecialchars($_POST["kommentar"])]);
+
+    // Auto-Hiding terms flagged 5 times
+    // ---------------------------------
+    // - this excludes flags by the same IP to prevent easy abuse
+    $stmt = $connection->prepare("SELECT DISTINCT ip_adresse FROM MELDUNGEN WHERE begriff=? AND erledigt=0");
+    $stmt->execute([$id]);
+
+    if($stmt->rowCount() == 5) {
+        $stmt = $connection->prepare("UPDATE meldungen SET aktiv=0 WHERE id=?");
+        $stmt->execute([$id]);
+    }
+
+    header("Location: /")
+    die("Erfolgreich.")
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +52,6 @@
      </div>
 
      <?php
-     $connection = include "Server_PHP/connect.php";
-     $id = $_GET["id"] ?? die("Kein Begriff gefunden!");
      $command = $connection->prepare("SELECT * FROM begriffe WHERE begriffe.id=? AND begriffe.aktiv=1");
      $command->execute([$id]);
      if($command->rowCount() != 1) die("Kein Begriff gefunden!");
