@@ -27,9 +27,9 @@ if($command->rowCount() == 1) {
         "term"            => $column->begriff,
         "definition"      => $column->definition,
         "last_update"     => $column->zuletzt_aktualisiert,
-        "category"        => $column->kategorie
+        "category"        => $column->kategorie,
+        "term_id"         => $column->id
     ]);
 } else {
     die(NOT_FOUND_ERROR);
 }
-
