@@ -2,6 +2,7 @@ API_URL = "http://116.203.31.114/Server_PHP/output.php?term="
 
 term = document.getElementById("term");
 description = document.getElementById("description")
+flag_button = document.getElementById("flag_button")
 
 if (window.localStorage["curia::selectedTerm"] && window.localStorage["curia::selectedTerm"] != "undefined") {
     term.innerText = window.localStorage["curia::selectedTerm"];
@@ -45,8 +46,8 @@ function makeCuriaGeneralRequest(oterm, if_term_not_existant_callback) {
                 response.json().then(function (data) {
                     if(data.response == "data") {
                         description.innerHTML = "<p>" + data.definition + "</p>Zuletzt bearbeitet: " + data.last_update + ", Kategorie: " + data.category;
-                        flag_button.style("display", "block")
-                        flag_button.setAttribute("href", "http://116.203.31.114/flag.php?id=" + data.id)
+                        flag_button.style.display = "inline-block";
+                        flag_button.setAttribute("href", "http://116.203.31.114/flag.php?id=" + data.term_id)
                     } else {
                         if (data.errno == 2) {
                             r = -1;
