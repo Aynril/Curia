@@ -71,6 +71,7 @@ require("Server_PHP/database.php");
       <th scope="col">Definition</th>
       <th scope="col">Kategorie</th>
       <th scope="col">Autor</th>
+      <th scope="col"><i class='fa fa-cog'></i></th>
     </tr>
   </thead>
   <tbody>testing
@@ -86,6 +87,7 @@ require("Server_PHP/database.php");
                 <td><?php echo $result["definition"]?></td>
                 <td><?php echo $result["kategorie"]?></td>
                 <td><?php echo $result["autor"]?></td>
+                <td>button type="button" class="btn btn-danger btn-sm " data_but="btn-xs"><i class='fa fa-wrench'></i> edit</button></td>
             </tr>
             <?php endwhile ?>
 
