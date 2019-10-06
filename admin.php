@@ -18,6 +18,8 @@ require("Server_PHP/database.php");
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
 
     <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <link href="https://bootswatch.com/4/sketchy/bootstrap.min.css" rel="stylesheet">
 
 
