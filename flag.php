@@ -10,11 +10,11 @@ if(!empty($_POST["kommentar"])) {
     // Auto-Hiding terms flagged 5 times
     // ---------------------------------
     // - this excludes flags by the same IP to prevent easy abuse
-    $stmt = $connection->prepare("SELECT DISTINCT ip_adresse FROM MELDUNGEN WHERE begriff=? AND erledigt=0");
+    $stmt = $connection->prepare("SELECT DISTINCT ip_adresse FROM meldungen WHERE begriff=? AND erledigt=0");
     $stmt->execute([$id]);
 
     if($stmt->rowCount() >= 5) {
-        $stmt = $connection->prepare("UPDATE meldungen SET aktiv=0 WHERE id=?");
+        $stmt = $connection->prepare("UPDATE begriffe SET aktiv=0 WHERE id=?");
         $stmt->execute([$id]);
     }
 
