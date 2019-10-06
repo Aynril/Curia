@@ -57,7 +57,7 @@ function makeCuriaGeneralRequest(oterm, if_term_not_existant_callback) {
                             if (r == -1) {
                                 term.classList.add("is-danger");
                                 description.innerText = "Der Begriff \"" + term.innerText + "\" wurde leider nicht gefunden."
-                                term.innerText = "Begriff nicht gefunden"
+                                term.innerText = "Begriff nicht gefundenm jetzt hinzufügen <a href=\"https://dein-eiscafe.de/?add=" + term.innerText + "\">+</a>"
                             }
                         } else {
                             term.classList.add("is-danger");
