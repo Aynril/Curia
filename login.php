@@ -34,6 +34,7 @@
   </head>
   <body class="text-center">
     <form class="form-signin">
+    <img class="mb-4" src="Logo/Logo_Curia.svg" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Nickname</label>
   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
