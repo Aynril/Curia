@@ -18,8 +18,8 @@ if(!empty($_POST["kommentar"])) {
         $stmt->execute([$id]);
     }
 
-    header("Location: /")
-    die("Erfolgreich.")
+    header("Location: /");
+    die("Erfolgreich.");
 }
 
 ?>
